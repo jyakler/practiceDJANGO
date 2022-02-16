@@ -7,6 +7,7 @@
     프로젝트 생성: django-admin startproject 프로잭트이름
     앱 생성     : python manage.py startapp 앱이름
     서버실행    : python manage.py runserver
+                 python manage.py runserver 포트번호
     서버닫기    : ctrl + c
     
 ***
