@@ -24,9 +24,9 @@
 ## 뷰함수
     -Query 문자열 추출
      요청방법에 따라 2가지 방법이 있음
-     GET 방식 요청: request.GET, request.GET['name'],//get 못받으면 에러남
-                                request.GET.get('name')//get못받으면 None으로 받아짐
-                                request.GET.get('name','기본값')
+     GET 방식 요청: request.GET, 변수=request.GET['name'],//get 못받으면 에러남
+                                변수=request.GET.get('name')//get못받으면 None으로 받아짐
+                                변수=request.GET.get('name','기본값')
      POST 방식 요청: request.POST
     -요청 방식을 체크: request.method
     -이런저런 서비스 로직(처리로직)을 구현
@@ -41,3 +41,19 @@
     or
     django.shortcut
     render(request,"템플릿.html",전달할내용)
+    
+### [템플릿]
+
+   - HTML로 작성(CSS, Javascript)
+   - 장고에서 제공하는 구문을 이용해서 동적처리 구현가능
+     동적 처리가 수행되는 위치에 따라서
+        - 서버: 장고의 템플릿 변수, 장고의 템플릿 태그
+        - 클라이언트: 자바스크립트
+        
+    ex. 웹페이지상 시간을 출력
+    
+    서버 기반의 시간: 장고 템플릿 태그(python)
+    
+    클라이언트 기반의 시간: 자바스크립트
+        
+    
