@@ -37,7 +37,10 @@
      GET 방식 요청: request.GET, 변수=request.GET['name'],//get 못받으면 에러남
                                 변수=request.GET.get('name')//get못받으면 None으로 받아짐
                                 변수=request.GET.get('name','기본값')
-     POST 방식 요청: request.POST
+     POST 방식 요청: 변수=request.POST
+                    변수=requst.POST['name']
+                    변수=request.POST.get('name')
+                    변수=request.POST.get('name','기본값')
     -요청 방식을 체크: request.method
     -이런저런 서비스 로직(처리로직)을 구현
     -템플릿을 통해서 응답페이지 구성되도록 처리
@@ -77,3 +80,12 @@
     {% else %}
     ...
     {% endif %}
+    
+## GET,POST 전달하는 방법(템플릿)
+#### GET
+**\<a>, \<form>, url** 등으로 
+
+#### POST -query안보이게 하고싶을때, 사이즈가 
+\<form>태그를 이용해서만 전달가능
+    
+    
