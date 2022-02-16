@@ -24,7 +24,9 @@
 ## 뷰함수
     -Query 문자열 추출
      요청방법에 따라 2가지 방법이 있음
-     GET 방식 요청: request.GET
+     GET 방식 요청: request.GET, request.GET['name'],//get 못받으면 에러남
+                                request.GET.get('name')//get못받으면 None으로 받아짐
+                                request.GET.get('name','기본값')
      POST 방식 요청: request.POST
     -요청 방식을 체크: request.method
     -이런저런 서비스 로직(처리로직)을 구현
