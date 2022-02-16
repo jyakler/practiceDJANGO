@@ -20,7 +20,16 @@
  
  템플릿,모델 사용시 settings.py에 등록해주어야함
  ***
+ ## path (프로젝트 urls.py에서)
+ 1. import 앱이름.views
  
+    path('',앱이름.views.함수)
+ 2. from django.urls import include
+ 
+    path('',include('앱이름.urls')
+    
+    -> urls.py(앱)에서 추가로 pathing해줌
+ ***
 ## 뷰함수
     -Query 문자열 추출
      요청방법에 따라 2가지 방법이 있음
