@@ -16,5 +16,5 @@
     
     템플릿: 브라우저에 렌더링(출력)하는 웹페이지 내용 - HTML로 만듬
     
-    모델: DB에 대한 CRUD(create, read, update, delete)작업 구현
+    모델: DB에 대한 CRUD(create, read, update, delete)작업 구현 -파이썬 클래스로 구현
  ***
