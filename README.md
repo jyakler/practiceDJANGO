@@ -7,6 +7,7 @@
     프로젝트 생성: django-admin startproject 프로잭트이름
     앱 생성     : python manage.py startapp 앱이름
     서버실행    : python manage.py runserver
+                 python manage.py runserver 포트번호
     서버닫기    : ctrl + c
     
 ***
@@ -20,14 +21,26 @@
  
  템플릿,모델 사용시 settings.py에 등록해주어야함
  ***
+ ## path (프로젝트 urls.py에서)
+ 1. import 앱이름.views
  
+    path('',앱이름.views.함수)
+ 2. from django.urls import include
+ 
+    path('',include('앱이름.urls')
+    
+    -> urls.py(앱)에서 추가로 pathing해줌
+ ***
 ## 뷰함수
     -Query 문자열 추출
      요청방법에 따라 2가지 방법이 있음
      GET 방식 요청: request.GET, 변수=request.GET['name'],//get 못받으면 에러남
                                 변수=request.GET.get('name')//get못받으면 None으로 받아짐
                                 변수=request.GET.get('name','기본값')
-     POST 방식 요청: request.POST
+     POST 방식 요청: 변수=request.POST
+                    변수=requst.POST['name']
+                    변수=request.POST.get('name')
+                    변수=request.POST.get('name','기본값')
     -요청 방식을 체크: request.method
     -이런저런 서비스 로직(처리로직)을 구현
     -템플릿을 통해서 응답페이지 구성되도록 처리
@@ -67,3 +80,13 @@
     {% else %}
     ...
     {% endif %}
+    
+## GET,POST 전달하는 방법(템플릿)
+#### GET
+**\<a>, \<form>, url** 등으로 
+
+#### POST -query안보이게 하고싶을때, 사이즈가 
+\<form>태그를 이용해서만 전달가능
+example:
+
+    <form method="POST" action="요청이 될 path사이트"></form>
