@@ -92,3 +92,21 @@
 example:
 
     <form method="POST" action="요청이 될 path사이트"></form>
+
+***    
+## 다양한 요청방식
+1. \<input type='타입' name='카테고리' value='이름'>
+
+        타입: checkbox: 체크박스(여러개가능)
+              radio: 선택 (1개가능)
+              date: 날짜
+              submit:전송
+              reset: 리셋
+          
+2. \<select name='카테고리'> \</select> : 목록 선택이 생김
+    
+        <option value='저장될이름'>보이는이름</option>
+        
+3. \<textarea name='변수' rows='' cols=''>
+    텍스트 적는 칸 생김
+      
