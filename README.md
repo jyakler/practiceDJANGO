@@ -102,6 +102,7 @@ example:
               date: 날짜
               submit:전송
               reset: 리셋
+              text: 
           
 2. \<select name='카테고리'> \</select> : 목록 선택이 생김
     
