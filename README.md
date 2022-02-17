@@ -86,7 +86,9 @@
 **\<a>, \<form>, url** 등으로 
 
 #### POST -query안보이게 하고싶을때, 사이즈가 
-\<form>태그를 이용해서만 전달가능, {% csrf_token %} 
+\<form>태그를 이용해서만 전달가능, {% csrf_token %} 사용해야함
+
+
 example:
 
     <form method="POST" action="요청이 될 path사이트"></form>
