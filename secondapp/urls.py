@@ -18,6 +18,6 @@ urlpatterns=[
     path('exam15/', views.exam15),
     path('exam16/', views.exam16, name='unico'),
     path('exam17/', views.exam17),
-    path('exam18/', views.exam18),
+    path('exam18/', views.exam18,name='exam18'),
     path('exam19/', views.exam19),
 ]
