@@ -111,3 +111,20 @@ example:
 3. \<textarea name='변수' rows='' cols=''>
     텍스트 적는 칸 생김
       
+***
+
+# DB-SQL
+
+data CRUD - DB 연동
+     Create - INSERT명령
+     Read - SELECT 명령
+     Update - UPDATE 명령
+     Delete - DELETE 명령
+     
+***
+몇개를 찾을지 모름- filter(), exclude()사용
+정확히 하나 뭐꺼낼지 알음- get()사용
+ 
+    필드이름__룩업타입=조건값
+ 
+ 
