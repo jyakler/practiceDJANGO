@@ -116,10 +116,14 @@ example:
 # DB-SQL
 
 data CRUD - DB 연동
-     Create - INSERT명령
-     Read - SELECT 명령
-     Update - UPDATE 명령
-     Delete - DELETE 명령
+
+   Create - INSERT명령
+     
+   Read - SELECT 명령
+     
+   Update - UPDATE 명령
+     
+   Delete - DELETE 명령
      
 ***
 몇개를 찾을지 모름- filter(), exclude()사용
