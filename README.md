@@ -42,6 +42,7 @@
                     변수=request.POST.get('name')
                     변수=request.POST.get('name','기본값')
     -요청 방식을 체크: request.method
+    -요청이 여러개면 .getlist 
     -이런저런 서비스 로직(처리로직)을 구현
     -템플릿을 통해서 응답페이지 구성되도록 처리
     -응답 페이지에 전달할 데이터가 존재하면 dictionary 객체에 담아서 보냄
