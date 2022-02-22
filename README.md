@@ -137,3 +137,16 @@ data CRUD - DB 연동
              
  DB테이블 생성------------------------>모델클래스 생성   Model API로 CRUD작업
  앱이름_모델클래스명
+
+***
+# 파일 업로드
+
+업로드하게 되는 파일을 모델에 저장하는 path인 models.FileField, 서브폴더 사용하고싶을때는 upload_to 사용
+
+file upload 시 form 으로 post로 넘겨주고 enctype="multipart/form-data" 넣어주어야함
+
+파일 타입의 input 태그도 사용해야함
+
+당연히 csrf_token도 필요(post이기 떄문)
+
+파일을 추출할때는 request.FILES 속성 사용
