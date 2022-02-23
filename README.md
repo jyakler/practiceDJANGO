@@ -146,6 +146,14 @@ models.IntegerField()
 
 models.CharField()
 
+models.DateField()
+
+   - auto_now_add=True 하면 만든 시간을 자동으로 넣어줌
+    
+models.DateTimeField()
+
+models.ForeignKey()
+
 ...
 
 #### 쉘 명령어
