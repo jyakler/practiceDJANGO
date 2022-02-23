@@ -27,4 +27,7 @@ urlpatterns = [
     path('fifthapp/',include('fifthapp.urls')),
     path('uploadapp/',include('uploadapp.urls')),
     path('redirectapp/',include('redirectapp.urls')),
+    path('visitorapp/',include('visitorapp.urls')),
+    path('relationapp/',include('relationapp.urls')),
+    path('accountapp/',include('accountapp.urls')),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

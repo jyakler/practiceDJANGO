@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'fifthapp',
     'redirectapp',
     'uploadapp',
+    'visitorapp',
+    'relationapp',
+    'accountapp',
 ]
 
 MIDDLEWARE = [
