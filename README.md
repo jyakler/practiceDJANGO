@@ -139,6 +139,23 @@ data CRUD - DB 연동
  DB테이블 생성------------------------>모델클래스 생성   Model API로 CRUD작업
  앱이름_모델클래스명
 
+#### 모델 명령어
+models.OneToOneField()
+
+models.IntegerField()
+
+models.CharField()
+
+...
+
+#### 쉘 명령어
+.objects.all() - 테이블안에있는 db데이터들 출력
+.save() - 테이블에 저장
+
+
+
+
+
 ***
 # 파일 업로드
 
@@ -151,3 +168,7 @@ file upload 시 form 으로 post로 넘겨주고 enctype="multipart/form-data" �
 당연히 csrf_token도 필요(post이기 떄문)
 
 파일을 추출할때는 request.FILES 속성 사용
+
+***
+## 페이징
+django.core.paginator 에서 Paginator 사용
